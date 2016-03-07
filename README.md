@@ -1,21 +1,32 @@
 # Rock, Paper, Scissors
+=======================
 
+Overview
 ----------------------
+- This is my solution to Makers Academy Week 3 challenge, creating a Rock, Paper, Scissors for one and two players
+- The app is built using Ruby, with a Sinatra server.
+- This app was test driven using RSpec for unit tests and Capybara for feature tests.
+
+Installation instructions
+----------------------
+- Clone the repository to your local machine and change into the directory
 
 ```
-Installation instructions
 $ git clone git@github.com:edwardkerry/rps-challenge.git
 $ cd rps-challenge
-$ bundle
-$ rackup
 ```
+
+- Run Bundle to acquire necesary Ruby gems `$ bundle`
+
+- Launch the server with Rack `$ rackup`
+
+- Visit the site `http://localhost:9292`
 
 ----------------------
 
 ## Single player game
 
 - The player can enter their name on signing in
-- The first round is round 1
 - The player can choose from rock, paper or scissors
 - The computer makes a random choice of rock, paper or scissors
 - The winner is declared and receives 1 point, unless it is a draw
@@ -24,8 +35,8 @@ $ rackup
 
 ## Multi-player game
 
-- Two players can enter their name on signing in
-- Player 1 can choose from rock, paper or scissors
+- Select `Two-Player` mode and both players sign in
+- Player 1 can choose from rock, paper or scissors. Player 2 look away!
 - Their choice is confirmed
 - Player 2 can make their choice
 - The choices are compared and points awarded
